@@ -1,0 +1,62 @@
+import time
+import os
+from faker import Faker
+from random import*
+import string
+from tqdm import tqdm
+fake = Faker()
+os.system("clear")
+print("\033[1;32;40m Fake CC generator by Anonmike \n")
+print("\033[1;33;40m PLS NOTE THIS TOOL IS FOR EDUCATIONAL PURPOSE ONLY AM NOT RESPONSIBLE FOR ANY MISUSE USE AT YOUR OWN RISK \n")
+print('''\033[1;31;40m Fake CC GENERATOR V1.0.0 \n ''')
+print("\033[95m Follow me on github: https://github.com/Anonmike \n") 
+print('\033[1;32;40m follow me on Instagram: @anon_mike1 https://www.instagram.com/invites/contact/?i=bcg5hm2eh8fk/n')
+
+print("\033[1;37;40m welcome")
+
+fake = Faker()
+Email = ['@gmail','@yahoo','@hotmail','@outlook','@Yandex']
+email=""
+for letter in range(int(1)):
+        random_email = Email[randint(0, 4)]
+        email = str(random_email) + str(email)
+date = ['2022','2025','2027','2029','2030']
+Date =""
+for letter in range(int(1)):
+        random_Date = date[randint(0, 4)]
+        Date = str(random_Date) + str(Date)
+  
+for _ in tqdm(range (100),
+          desc='Generating CC....',
+          ascii = False, ncols = 75) :
+       time.sleep(0.05)
+print ("CC generated successfully")
+
+legnth = 16
+
+# storing numbers to use them create CC number
+password = ['0','1','2','3','4','5','6','7','8','9']
+ # initializing an empty string
+cardNumber = ""
+print("")
+for letter in range(int(legnth)):
+        guess_letter = password[randint(0, 8)]
+        cardNumber = str(guess_letter) + str(cardNumber)
+for I in range(0,10):
+ print("Card number: " + cardNumber)
+ 
+ cardholder_name = fake.name()
+ print("Card holder name: " + cardholder_name )
+ print("Email: " + cardholder_name + email +".com")
+ print (	f"Country: {fake.country()}")
+ print (	f"Postal code: {fake.postalcode()}")
+ print (	f"City: {fake.city()}")
+ import random
+ x = "1234567890"
+ CVV = "".join(random.sample(x, 3))
+ print("CVV: " +CVV)
+ print (	f"Phone number: {fake.phone_number()}")
+ print (	f"Address: {fake.address()}")
+ print ("Expiry date: " + Date )
+ print("")
+print("\033[1;32;40mTHANK YOU FOR USING THIS FAKE CC GENERATOR CREATED BY ANONMIKE\n do not forget to follow Anon Mike on github and instagram")
